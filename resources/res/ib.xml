@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_uep" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <TextView android:id="@+id/tv_title_uep" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_profile" style="@style/UptodownToolbarStyle"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@+id/v_divider_uep" android:background="@color/blue_primary" android:layout_width="match_parent" android:layout_height="6dp" android:layout_below="@+id/toolbar_uep"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/v_divider_uep">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_username_uep" android:background="@drawable/core_ripple_bg_card" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_size_s" android:layout_height="@dimen/icon_size_s" android:contentDescription="@null" app:srcCompat="@drawable/vector_user_default"/>
+                <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/tv_username_uep" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/username_edit_title" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_password_uep" android:background="@drawable/core_ripple_bg_card" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_size_s" android:layout_height="@dimen/icon_size_s" android:contentDescription="@null" app:srcCompat="@drawable/vector_password"/>
+                <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/tv_password_uep" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/password_edit_title" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_avatar_uep" android:background="@drawable/core_ripple_bg_card" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_size_s" android:layout_height="@dimen/icon_size_s" android:contentDescription="@null" app:srcCompat="@drawable/vector_change_avatar"/>
+                <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/tv_avatar_uep" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/avatar_edit_title" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_logout_uep" android:background="@drawable/core_ripple_bg_card" android:paddingLeft="@dimen/margin_l" android:paddingRight="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/icon_size_s" android:layout_height="@dimen/icon_size_s" android:contentDescription="@null" app:srcCompat="@drawable/vector_profile_logout"/>
+                <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/tv_logout_uep" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cerrar_sesion" android:lines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

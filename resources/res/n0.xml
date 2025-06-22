@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_upcoming_releases" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <TextView android:id="@+id/tv_title_upcoming_releases" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/my_preregistrations" style="@style/UptodownToolbarStyle"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nsv_upcoming_releases" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_no_items_upcoming_releases">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_upcoming_releases" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/ll_order_upcoming_releases" android:visibility="invisible" layout="@layout/dropdown_menu_layout"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_upcoming_releases" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_14" android:textColor="@color/blue_primary" android:gravity="center" android:id="@+id/tv_discover_upcoming_releases" android:background="@drawable/ripple_stroke_blue_primary" android:padding="@dimen/margin_m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginTop="@dimen/margin_m" android:layout_marginRight="@dimen/margin_m" android:layout_marginBottom="@dimen/margin_l" android:text="@string/discover_upcoming_releases" android:maxLines="1" android:layout_below="@+id/ll_upcoming_releases" android:textAllCaps="true"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="@dimen/text_size_l" android:textColor="@color/text_secundary" android:gravity="center" android:id="@+id/tv_no_items_upcoming_releases" android:background="@drawable/core_shape_stroke_light_grey" android:paddingLeft="@dimen/margin_l" android:paddingTop="@dimen/margin_xl" android:paddingRight="@dimen/margin_l" android:paddingBottom="@dimen/margin_xl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_m" android:text="@string/msg_no_upcoming_releases" android:layout_below="@+id/toolbar_upcoming_releases"/>
+    <include android:id="@+id/loading_view_upcoming_releases" layout="@layout/core_loading_view"/>
+</RelativeLayout>

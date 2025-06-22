@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_user_comments" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <TextView android:id="@+id/tv_toolbar_title_user_comments" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/user_comments_title" style="@style/UptodownToolbarStyle"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_user_comments" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar_user_comments"/>
+    <TextView android:textSize="@dimen/text_size_l" android:gravity="center" android:id="@+id/tv_error_user_comments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_m" android:layout_marginRight="@dimen/margin_m" android:text="@string/user_not_found" android:layout_centerInParent="true"/>
+    <include android:id="@+id/loading_view_user_comments" layout="@layout/core_loading_view"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/shape_user_device_bg_gradient" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <ImageView android:id="@+id/iv_device_user_device_item" android:paddingTop="@dimen/margin_s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:srcCompat="@drawable/vector_user_device_mobile_item"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info_user_device_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_m" android:layout_marginStart="-20dp" android:layout_marginEnd="@dimen/margin_m" android:layout_toStartOf="@+id/iv_enter_user_device_item" android:layout_toEndOf="@+id/iv_device_user_device_item">
+        <TextView android:textSize="@dimen/font_size_16" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_name_user_device_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_last_update_user_device_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_enter_user_device_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="@dimen/margin_l" android:layout_alignParentEnd="true" app:srcCompat="@drawable/vector_arrow_right_white"/>
+</RelativeLayout>

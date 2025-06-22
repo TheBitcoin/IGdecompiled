@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/margin_l" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_l" android:textColor="@color/text_primary" android:gravity="center" android:id="@+id/tv_title_dialog_rename" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_to"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_wishlist_option" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_l">
+        <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:id="@+id/tv_wishlist_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wishlist_title"/>
+        <ImageView android:id="@+id/iv_wishlist_option" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" app:srcCompat="@drawable/vector_check"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_recommended_option" android:background="@drawable/core_ripple_bg_card" android:padding="@dimen/margin_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_s">
+        <TextView android:textSize="@dimen/text_size_m" android:textColor="@color/text_primary" android:id="@+id/tv_recommended_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recommended_apps"/>
+        <ImageView android:id="@+id/iv_recommended_option" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" app:srcCompat="@drawable/vector_check"/>
+    </RelativeLayout>
+</LinearLayout>
